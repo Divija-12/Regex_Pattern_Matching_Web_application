@@ -1,0 +1,66 @@
+#b1{
+    background-color: rgb(75, 72, 72);
+}
+#heading1{
+    color: antiquewhite;
+    font-size: 45px;
+    text-align: center;
+    font-style: inherit;
+}
+#d2{
+    display: flex;
+}
+#form1{
+    background-color: black;
+    margin-left: 150px;
+    margin-right: 100px;
+    height: 450px;
+    width: 500px;
+    border-radius: 9px;
+}
+#form2{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+#d3{
+    background-color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 450px;
+    width: 500px;
+    border-radius: 9px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: bisque;
+}
+#heading2{
+    font-size: 25px;
+    margin-left: 40px;
+}
+#list{
+    margin-left: 40px;
+    font-size: 20px;
+}
+label{
+    font-size: 25px;
+    color: bisque;
+    margin-left: 40px;
+}
+#ip1{
+    height: 30px;
+    width: 400px;
+    margin-left: 40px;
+}
+#txt{
+    height: 250px;
+    width: 400px;
+    text-align: left;
+    margin-left: 40px;
+}
+button{
+    margin-left: 150px;
+    margin-right: 100px;
+    height: 35px;
+    width: 200px;
+    font-weight: bolder;
+}

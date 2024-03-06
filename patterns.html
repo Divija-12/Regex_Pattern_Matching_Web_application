@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex pattern</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename='patternStyle.css')}}">
+</head>
+<body id="b1">
+    <div id="d1">
+        <h1 id="heading1">Regex Pattern Checker</h1>
+    </div>
+    <div id="d2">
+        <div>
+            <form id="form1" action="/findMatch" method="post">
+                <br>
+                <label for="pattern">Enter Regex Pattern</label><br>
+                <input type="text" name="pattern" id="ip1"><br><br>
+                <label for="text">Enter the Text</label><br>
+                <textarea id="txt" name="textValue" rows="6" cols="50"></textarea>
+                <br><br>
+                <button type="submit" name="FindPattern">Match Regex Pattern</button>
+            </form>  
+        </div>
+        <div id="d3"> 
+             <h3 id="heading2">Patterns Found</h3>
+             <ul id="list">
+                {% if Notfound %}
+                    <li>No matching texts found</li>
+                {% else %}
+                    {% for match in match_list %}
+                        <li> {{match}}</li>
+                    {% endfor %}
+                {% endif %}
+             </ul>
+        </div>          
+    </div>
+    <br>
+    <br>
+    <form action="/checkMail" id="form2">
+        <button type="submit" name="emailCheck">Email ID validation</button>
+    </form>
+</body>
+</html>

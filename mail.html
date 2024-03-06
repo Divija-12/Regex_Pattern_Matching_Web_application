@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename='mailStyle.css')}}">
+</head>
+<body id="b1">
+    <div id="d1">
+        <h1 id="heading1">Validate Email ID</h1>
+    </div>
+    <div id="d2">
+        <form id="form1" action="/validate" method="post">
+            <br>
+            <br>
+            <label for="pattern">Enter Email ID</label><br><br>
+            <input type="text" name="mail" id="ip1"><br><br><br>
+            <button type="submit" id="FindPattern">Check Email Address</button>
+
+            <br>
+            <br>
+            <br>
+               <p>{{result}}</p>
+        </form>        
+    </div>
+    <br>
+    <br>
+    <form action="/" id="form2">
+        <button type="submit" id="redirectButton">Back to Regex pattern matching</button>
+    </form>
+</body>
+</html>
